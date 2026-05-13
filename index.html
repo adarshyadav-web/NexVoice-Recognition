@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexVoice | AI Speech Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <span>NexVoice</span>
+            </div>
+            <h1>Speech to Text</h1>
+            <p>Speak clearly into your microphone to convert voice to text</p>
+        </header>
+
+        <main>
+            <div class="text-area">
+                <div id="output" class="output" placeholder="Your speech will appear here..."></div>
+                <div id="interim" class="interim"></div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn-mic">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                <div class="actions">
+                    <button id="copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button id="clear-btn"><i class="fa-solid fa-eraser"></i> Clear</button>
+                </div>
+            </div>
+            
+            <div id="status" class="status">Click the microphone to start</div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
